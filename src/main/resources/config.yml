@@ -14,6 +14,7 @@ quests:
     rewards:
       - 'give %player_name% minecraft:diamond_sword'
     options:
+      # This can be left empty or be an array of Bukkit EntityType enum names
       entity-types: []
   myquest2:
     name: Run Commmands Example
@@ -33,6 +34,7 @@ quests:
     rewards:
       - 'give %player_name% minecraft:diamond_shovel'
     options:
+      # Array of Bukkit Material enum names
       blocks:
         - DIRT
         - GRASS_BLOCK
@@ -43,6 +45,7 @@ quests:
     rewards:
       - 'give %player_name% minecraft:diamond_shovel'
     options:
+      # Array of Bukkit Material enum names
       blocks:
         - DIRT
         - GRASS_BLOCK
