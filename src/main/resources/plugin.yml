@@ -1,0 +1,5 @@
+name: SimpleQuests
+author: lukeeey
+description: Simple quests plugin for DevRoom interview
+version: ${project.version}
+main: io.github.lukeeey.simplequests.SimpleQuestsPlugin

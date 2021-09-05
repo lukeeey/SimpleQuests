@@ -1,0 +1,48 @@
+# SimpleQuests Configuration.
+
+database:
+  # This can't be changed currently
+  provider: json
+
+# This where you can define quests and configure pretty much everything about them.
+# Available quest types are: KILL_MOB, BLOCK_BREAK, BLOCK_PLACE, RUN_COMMAND
+quests:
+  myquest:
+    name: Kill Mobs Example
+    type: KILL_MOB
+    amount: 10
+    rewards:
+      - 'give %player_name% minecraft:diamond_sword'
+    options:
+      entity-types: []
+  myquest2:
+    name: Run Commmands Example
+    type: RUN_COMMAND
+    amount: 2
+    rewards:
+      - 'give %player_name% minecraft:diamond_pickaxe'
+    options:
+      commands:
+        - help
+        - version
+        - fakecommandthatdoesntexist
+  myquest3:
+    name: Break Blocks Example
+    type: BLOCK_BREAK
+    amount: 5
+    rewards:
+      - 'give %player_name% minecraft:diamond_shovel'
+    options:
+      blocks:
+        - DIRT
+        - GRASS_BLOCK
+  myquest4:
+    name: Place Blocks Example
+    type: BLOCK_PLACE
+    amount: 15
+    rewards:
+      - 'give %player_name% minecraft:diamond_shovel'
+    options:
+      blocks:
+        - DIRT
+        - GRASS_BLOCK
